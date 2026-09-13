@@ -1,0 +1,16 @@
+# 七猫小说 · 广告域名拦截
+# 用途：Quantumult X 分流规则，配合 [filter_remote] 订阅
+# 来源：fmz200/wool_scripts、GrandpaNiuu/GrandpaNiu
+# 整理日期：2026-09-14
+#
+# 说明：这一组是纯广告域名，直接 reject，不需要 MITM，副作用极小。
+#      注意 QX 的 filter 规则是全局生效的，没有按 App 匹配的语法。
+
+host, cdn-new-ad.wtzw.com, reject
+host, cdn-ad.wtzw.com, reject
+host, a-remad.qm989.com, reject
+host, mobads.baidu.com, reject
+host, mobads-pre-config.cdn.bcebos.com, reject
+host, qzs.gdtimg.com, reject
+host, pgdt.ugdtimg.com, reject
+host-suffix, gdt.qq.com, reject
